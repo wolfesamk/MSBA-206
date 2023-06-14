@@ -1,7 +1,20 @@
 {
     "cSpell.words": [
+        "cmap",
+        "dfceral",
         "DMBA",
+        "figsize",
+        "matplotlib",
         "MSBA",
-        "nonpurchasers"
+        "nonpurchasers",
+        "normaltbl",
+        "pdtbl",
+        "potass",
+        "pylab",
+        "seaborn",
+        "vmax",
+        "vmin",
+        "xticklabels",
+        "yticklabels"
     ]
 }

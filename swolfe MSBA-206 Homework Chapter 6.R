@@ -3,19 +3,22 @@
 #July 7th, 2023
 #installed packages
 #ggpubr
-library(linprog)
-library(lpSolve)
-library(data.table)
-library(leaps)
-library(ISLR2)
-library(fastDummies)
-library(recipes)
-library(lessR)
+library(dplyr) #3
+library(data.table) #1
+library(curl) #2
+library(fastDummies) #5
+#library(ISLR2)
+library(leaps) #6
+library(lessR) #4
+#library(linprog)
+#library(lpSolve)
+options(rstudio.help.showDataPreview = FALSE)
+getOption("rstudio.help.showDataPreview")
 
 #Question 6.3
 #Preparing the data
 #import data
-dfAirBase <- fread("Airfares.csv")
+dfAirBase <- fread("https://raw.githubusercontent.com/wolfesamk/MSBA-206/main/dmba/Airfares.csv")
 #verifying dataframe shape and columns
 names(dfAirBase)
 dim(dfAirBase)
@@ -59,7 +62,20 @@ meanSLOT
 #creating dummy variables
 dfAirDummy <- dummy_cols(dfAirAllCat, remove_first_dummy = TRUE, remove_selected_columns = TRUE)
 #splitting the data
+set.seed(1)
+airTrain.i <- sample(c(TRUE, FALSE),
+                   nrow(dfAirDummy),
+                   replace = TRUE)
+airTest.i <-(!airTrain.i)
 #6.3.c.ii
-air.step.full.fwd <-regsubsets(FARE ~., data = dfAirDummy, nvmax = 14, method = "forward")
+air.ii.step.best.fwd <-regsubsets(FARE ~., data = dfAirDummy[airTrain.i, ], nvmax = 14, method = "forward")
+air.ii.step.test.mat <-model.matrix(FARE ~ ., data=dfAirDummy[airTest.i, ])
+air.ii.val.errors <- rep(NA, 13)
+for (i in 1:13) {
+  coefi <- coef(air.ii.step.best.fwd, id = i)
+  pred <- air.ii.step.test.mat[, names(coefi)] %*% coefi
+  air.ii.val.errors[i] <- mean((dfAirDummy$FARE[airTest.i]-pred)^2)
+}
+air.ii.val.errors
 summary(air.step.full.fwd)
 air.step.full.fwd

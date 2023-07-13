@@ -124,3 +124,24 @@ lasso.coef <- predict(out, type = "coefficients",
                       s = bestlam)[1:14, ]
 lasso.coef[lasso.coef != 0]
 
+#6.3 True Stepwise
+air.vi.step.best.bwd <-regsubsets(FARE ~., data = dfAirDummy[airTrain.i, ], nvmax = 14, method = "seqrep")
+air.vi.step.test.mat <-model.matrix(FARE ~ ., data=dfAirDummy[airTest.i, ])
+air.vi.val.errors <- rep(NA, 13)
+for (i in 1:13) {
+  coefi <- coef(air.vi.step.best.bwd, id = i)
+  pred <- air.vi.step.test.mat[, names(coefi)] %*% coefi
+  air.vi.val.errors[i] <- mean((dfAirDummy$FARE[airTest.i]-pred)^2)
+}
+summary(air.vi.step.best.bwd)
+air.vi.best.row <- which.min(air.vi.val.errors)
+air.vi.best.row
+air.vi.val.errors[air.iii.best.row]
+coef(air.vi.step.best.bwd, air.iii.best.row)
+alldummynames <- names(dfAirDummy[,-1:-2])
+alldummynames <- alldummynames[-2]
+alldummynames <- alldummynames[-3:-4]
+alldummynames <- alldummynames[-4]
+air.vi.best.pred <- alldummynames[-8]
+#these are the best predictors.
+air.vi.best.pred

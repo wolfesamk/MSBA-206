@@ -1,2 +1,14 @@
 # Custom Dictionary Words
+alldummynames
+bestlam
+coefi
+dataframe
+dplyr
+fread
+ggpubr
+glmnet
+newx
+nvmax
+regsubsets
+seqrep
 zpredictors

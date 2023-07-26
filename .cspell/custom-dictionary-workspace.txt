@@ -1,5 +1,6 @@
 # Custom Dictionary Words
 alldummynames
+astype
 bestlam
 coefi
 dataframe
@@ -9,6 +10,7 @@ ggpubr
 glmnet
 newx
 nvmax
+proba
 regsubsets
 seqrep
 zpredictors

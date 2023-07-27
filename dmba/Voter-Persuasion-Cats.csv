@@ -1,102 +1,50 @@
-cats,types
-OPP_SEX,Derived 
-AGE,Voterfile
-HH_ND,Derived 
-HH_NR,Derived 
-HH_NI,Derived 
-MED_AGE,Census
-MED_AGE_M,Census
-MED_AGE_F,Census
-NH_WHITE,Census
-NH_AA,Census
-NH_NATAM,Census
-NH_ASIAN,Census
-NH_HPI,Census
-NH_OTHER,Census
-NH_MULT,Census
-HISP,Census
-COMM_LT10,Census
-COMM_609P,Census
-MED_HH_INC,Census
-COMM_CAR,Census
-COMM_CP,Census
-COMM_PT,Census
-COMM_WALK,Census
-KIDS,Census
-KIDS_MC,Census
-M_NEV_MAR,Census
-M_MAR,Census
-M_MAR_SP,Census
-M_MAR_SNP,Census
-F_NEV_MAR,Census
-F_MAR,Census
-F_MAR_SP,Census
-F_MAR_SNP,Census
-ED_ASSOC,Census
-ED_BACH,Census
-ED_MD,Census
-ED_PROF,Census
-ED_DOC,Census
-ED_4COL,Census
-GENDER_F,Voterfile
-GENDER_M,Voterfile
-H_AFDLN3P,Derived 
-H_AFSSLN3P,Derived 
-H_F1,Derived 
-H_FFDLN2,Derived 
-H_FFSLN2,Derived 
-H_M1,Derived 
-H_MFDLN2,Derived 
-H_MFDLN3P,Derived 
-H_MFSLN2,Derived 
-H_MFSLN3P,Derived 
-H_MFSSLN3P,Derived 
-H_MMDLN2,Derived 
-H_MMSLN2,Derived 
-PARTY_D,Voterfile
-PARTY_I,Voterfile
-PARTY_R,Voterfile
-HHP_D,Derived 
-HHP_DD,Derived 
-HHP_DI,Derived 
-HHP_DR,Derived 
-HHP_I,Derived 
-HHP_II,Derived 
-HHP_R,Derived 
-HHP_RI,Derived 
-HHP_RR,Derived 
-VPP_08,Derived 
-VPP_12,Derived 
-VPR_08,Derived 
-VPR_10,Derived 
-VPR_12,Derived 
-VG_04,Derived 
-VG_06,Derived 
-VG_08,Derived 
-VG_10,Derived 
-VG_12,Derived 
-PP_PELIG,Derived 
-PR_PELIG,Derived 
-AP_PELIG,Derived 
-G_PELIG,Derived 
-E_PELIG,Derived 
-NL5G,Derived 
-NL3PR,Derived 
-NL5AP,Derived 
-NL2PP,Derived 
-REG_DAYS,Derived 
-UpscaleBuy,Commercial Data
-UpscaleMal,Commercial Data
-UpscaleFem,Commercial Data
-BookBuyerI,Commercial Data
-FamilyMaga,Commercial Data
-FemaleOrie,Commercial Data
-ReligiousM,Commercial Data
-GardeningM,Commercial Data
-CulinaryIn,Commercial Data
-HealthFitn,Commercial Data
-DoItYourse,Commercial Data
-FinancialM,Commercial Data
-ReligiousC,Commercial Data
-PoliticalC,Commercial Data
-MedianEduc,Commercial Data
+cats,types,,,,,,,
+OPP_SEX,Derived ,,,,,,,
+HH_ND,Derived ,,,,,,,
+HH_NR,Derived ,,,,,,,
+HH_NI,Derived ,,,,,,,
+H_AFDLN3P,Derived ,,,,,,,
+H_F1,Derived ,,,,,,,
+H_M1,Derived ,,,,,,,
+H_MFDLN3P,Derived ,,,,,,,
+VPP_08,Derived ,,,,,,,
+VPP_12,Derived ,,,,,,,
+VPR_08,Derived ,,,,,,,
+VPR_10,Derived ,,,,,,,
+VPR_12,Derived ,,,,,,,
+VG_04,Derived ,,,,,,,
+VG_06,Derived ,,,,,,,
+VG_08,Derived ,,,,,,,
+VG_10,Derived ,,,,,,,
+VG_12,Derived ,,,,,,,
+PP_PELIG,Derived ,,,,,,,
+PR_PELIG,Derived ,,,,,,,
+AP_PELIG,Derived ,,,,,,,
+G_PELIG,Derived ,,,,,,,
+E_PELIG,Derived ,,,,,,,
+NL5G,Derived ,,,,,,,
+NL3PR,Derived ,,,,,,,
+NL5AP,Derived ,,,,,,,
+NL2PP,Derived ,,,,,,,
+REG_DAYS,Derived ,,,,,,,
+MED_AGE,Census,,,,,,,
+NH_WHITE,Census,,,,,,,
+NH_AA,Census,,,,,,,
+NH_ASIAN,Census,,,,,,,
+NH_MULT,Census,,,,,,,
+HISP,Census,,,,,,,
+COMM_LT10,Census,,,,,,,
+COMM_609P,Census,,,,,,,
+MED_HH_INC,Census,,,,,,,
+COMM_CAR,Census,,,,,,,
+COMM_CP,Census,,,,,,,
+COMM_PT,Census,,,,,,,
+COMM_WALK,Census,,,,,,,
+KIDS,Census,,,,,,,
+ED_4COL,Census,,,,,,,
+AGE,Voterfile,,,,,,,
+GENDER_F,Voterfile,,,,,,,
+GENDER_M,Voterfile,,,,,,,
+PARTY_D,Voterfile,,,,,,,
+PARTY_I,Voterfile,,,,,,,
+PARTY_R,Voterfile,,,,,,,
